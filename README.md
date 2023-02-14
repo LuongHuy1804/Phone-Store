@@ -1,0 +1,11 @@
+# VueJs3 + Tailwind CSS
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run dev
+```
