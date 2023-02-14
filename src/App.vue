@@ -29,7 +29,7 @@
           class="inline-flex gap-x-2 items-center py-2.5 px-6 text-white bg-indigo-600 rounded-xl hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-1"
         >
           <PlusIcon class="w-6 h-6 fill-current" />
-          <span class="text-sm font-semibold tracking-wide">Create Item</span>
+          <span class="text-sm font-semibold tracking-wide">Create</span>
         </button>
       </div>
 
@@ -60,9 +60,9 @@
                 <span>Product Name</span>
               </div>
             </td>
-            <td class="py-4 px-4 text-center">Pricing</td>
+            <td class="py-4 px-4 text-center">Price</td>
             <td class="py-4 px-4 text-center">Sold</td>
-            <td class="py-4 px-4 text-center">Rating</td>
+            <td class="py-4 px-4 text-center">Rate</td>
             <td class="py-4 px-4 text-center">Origin</td>
             <td class="py-4 pr-10 pl-4 text-center">
               <FilterIcon class="w-6 h-6 fill-current" />
@@ -154,8 +154,8 @@
 <script setup>
 import OverviewIcon from "./icons/overview.svg";
 import ShoppingBagIcon from "./icons/shopping-bag.svg";
-import GraphIcon from "./icons/graph.svg";
-import CalendarIcon from "./icons/calendar.svg";
+import GiftIcon from "./icons/gift.svg";
+import AccessoryIcon from "./icons/accessory.svg";
 import WalletIcon from "./icons/wallet.svg";
 import FileIcon from "./icons/file.svg";
 import ChatIcon from "./icons/chat.svg";
@@ -166,8 +166,7 @@ import PlusIcon from "./icons/plus.svg";
 import LayersIcon from "./icons/layers.svg";
 import DraftIcon from "./icons/draft.svg";
 import InvisibleIcon from "./icons/invisible.svg";
-import RejectedIcon from "./icons/rejected.svg";
-import MailIcon from "./icons/mail.svg";
+import RogIcon from "./icons/rog.svg";
 import FilterIcon from "./icons/filter.svg";
 import SketchIcon from "./icons/sketch.svg";
 import PencilIcon from "./icons/pencil.svg";
@@ -178,15 +177,21 @@ import AppleIcon from "./icons/apple.svg"
 import SamsungIcon from "./icons/samsung.svg"
 import HuaweiIcon from "./icons/huawei.svg"
 import XiaomiIcon from "./icons/xiaomi.svg"
+import GuarentedIcon from "./icons/guarented.svg"
+import BillIcon from "./icons/bill.svg"
+import VivoIcon from "./icons/vivo.svg"
+import NokiaIcon from "./icons/nokia.svg"
 
 const sidebar = [
   [
     { name: "Overview", icon: OverviewIcon },
     { name: "Products", icon: ShoppingBagIcon },
-    { name: "Analytics", icon: GraphIcon },
-    { name: "Schedule", icon: CalendarIcon },
+    { name: "Gifts", icon: GiftIcon },
+    { name: "Accessory", icon: AccessoryIcon },
     { name: "Payout", icon: WalletIcon },
     { name: "Statements", icon: FileIcon },
+    { name: "Guarentee", icon: GuarentedIcon},
+    { name: "Export Bill", icon: BillIcon}
   ],
   [
     { name: "Help", icon: ChatIcon },
@@ -197,11 +202,13 @@ const sidebar = [
 ];
 
 const status = [
-  { name: "Published", icon: LayersIcon },
-  { name: "Draft", icon: DraftIcon },
-  { name: "Hidden", icon: InvisibleIcon },
-  { name: "Rejected", icon: RejectedIcon },
-  { name: "Under Review", icon: MailIcon },
+  { name: "Apple", icon: AppleIcon },
+  { name: "Huawei", icon: HuaweiIcon },
+  { name: "SAMSUNG", icon: SamsungIcon },
+  { name: "XiaoMi", icon: XiaomiIcon },
+  { name: "ROG", icon: RogIcon },
+  { name: "Vivo", icon: VivoIcon },
+  { name: "Nokia", icon: NokiaIcon },
 ];
 
 const products = [
